@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const app = require("./app");
 
-mongoose.connect(process.env.Local_DATABASE).then(() => {
+mongoose.connect(process.env.DATABASE).then(() => {
   console.log("database connected");
 });
 const port = process.env.PORT || 8000;
